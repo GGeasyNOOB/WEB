@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Modal</title>
+
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+<form class="modalWindow" id="modalWindow">
+    <div class="modalContent">
+        <div class="modalHead">
+            <span class="modalHeader">Powerbank options</span>
+            <button class="closeButton">&times</button>
+        </div>
+        <div class="modalBody">
+            <ul class="modalInputList">
+                <li>
+                    <label for="inputPowerbankName">Powerbank name:<br>
+                        <input id="inputPowerbankName" class="modalInputProperty"
+                               placeholder="Input powerbank name">
+                    </label>
+                </li>
+                <li>
+                    <label for="inputPowerbankCapacity">Powerbank capacity:<br>
+                        <input id="inputPowerbankCapacity" class="modalInputProperty"
+                               placeholder="Input powerbank capacity">
+                    </label>
+                </li>
+                <li>
+                    <label for="inputPowerbankSize">Powerbank size:<br>
+                        <input id="inputPowerbankSize" class="modalInputProperty"
+                               placeholder="Input powerbank size">
+                    </label>
+                </li>
+                <li>
+                    <label for="inputPowerbankPort">Powerbank port:<br>
+                        <input id="inputPowerbankPort" class="modalInputProperty"
+                               placeholder="Input powerbank port">
+                    </label>
+                </li>
+                <li>
+                    <label for="inputPowerbankFCH">Powerbank fast charge:<br>
+                        <select id="inputPowerbankFCH" class="modalInputProperty">
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <img id="modalPowerbankImage" alt="" src=""><br>
+                    <label for="modalPowerbankImage">Select image file:<br>
+                        <input type="file" id="inputCameraImage" class="modalInputProperty" onchange=openImage(this)>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="modalButtons">
+            <input type="submit" value="Confirm" class="confirmButton">
+        </div>
+    </div>
+    <div class="modalOverlay"></div>
+</form>
+</body>
+<script>
+    function openImage(imageElement) {
+        let image = document.getElementById("modalPowerbankImage");
+        image.src = URL.createObjectURL(imageElement.files[0]);
+    }
+</script>
+</html>
