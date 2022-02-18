@@ -15,54 +15,48 @@
 <form class="modalWindow" id="modalWindow">
     <div class="modalContent">
         <div class="modalHead">
-            <span class="modalHeader">Powerbank options</span>
-            <button class="closeButton">&times</button>
+            <span>Powerbank options</span>
+            <button class="closeModal">&times</button>
         </div>
         <div class="modalBody">
-            <ul class="modalInputList">
+            <ul class="modalList">
                 <li>
-                    <label for="inputPowerbankName">Powerbank name:<br>
-                        <input id="inputPowerbankName" class="modalInputProperty"
+                    <label for="inputPowerbankName">Powerbank name:<br></label>
+                        <input id="inputPowerbankName" class="modalProperty"
                                placeholder="Input powerbank name">
-                    </label>
                 </li>
                 <li>
-                    <label for="inputPowerbankCapacity">Powerbank capacity:<br>
-                        <input id="inputPowerbankCapacity" class="modalInputProperty"
+                    <label for="inputPowerbankCapacity">Powerbank capacity:<br></label>
+                        <input id="inputPowerbankCapacity" class="modalProperty"
                                placeholder="Input powerbank capacity">
-                    </label>
                 </li>
                 <li>
-                    <label for="inputPowerbankSize">Powerbank size:<br>
-                        <input id="inputPowerbankSize" class="modalInputProperty"
+                    <label for="inputPowerbankSize">Powerbank size:<br></label>
+                        <input id="inputPowerbankSize" class="modalProperty"
                                placeholder="Input powerbank size">
-                    </label>
                 </li>
                 <li>
-                    <label for="inputPowerbankPort">Powerbank port:<br>
-                        <input id="inputPowerbankPort" class="modalInputProperty"
+                    <label for="inputPowerbankPort">Powerbank port:<br></label>
+                        <input id="inputPowerbankPort" class="modalProperty"
                                placeholder="Input powerbank port">
-                    </label>
                 </li>
                 <li>
-                    <label for="inputPowerbankFCH">Powerbank fast charge:<br>
-                        <select id="inputPowerbankFCH" class="modalInputProperty">
+                    <label for="inputPowerbankFCH">Powerbank fast charge:<br></label>
+                        <select id="inputPowerbankFCH" class="modalProperty">
                             <option>Yes</option>
                             <option>No</option>
                         </select>
-                    </label>
                 </li>
                 <li>
                     <img id="modalPowerbankImage" alt="" src=""><br>
                     <label for="modalPowerbankImage">Select image file:<br>
-                        <input type="file" id="inputCameraImage" class="modalInputProperty" onchange=openImage(this)>
+                        <input type="file" id="inputCameraImage" class="modalProperty" onchange=openImage(this)>
                     </label>
                 </li>
             </ul>
+                <input type="submit" value="Confirm" class="confirmButton">
         </div>
-        <div class="modalButtons">
-            <input type="submit" value="Confirm" class="confirmButton">
-        </div>
+
     </div>
     <div class="modalOverlay"></div>
 </form>

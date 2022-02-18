@@ -1,40 +1,42 @@
 .modalWindow {
     font-family: Calibri, serif;
-    text-align: center;
 }
 
 .modalContent {
     position: relative;
-    z-index: 1;
+    z-index: 100;
     background-color: white;
     border-radius: 10px;
     border: 1px solid grey;
-    margin: 15% auto;
+    margin: auto;
+    margin-top: 5%;
     padding: 25px;
-    width: 35%;
-    height: 100%;
+    max-width: 600px;
     color: black;
-
 }
 
 .modalHead {
-    display: flex;
-    justify-content: space-between;
+    display: inline;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5px;
+    padding: 0 15px;
     box-shadow: 0 2px 0 lightgray;
-    margin: -20px -20px 20px;
-    padding: 5px;
-}
-
-.modalHeader {
     color: deepskyblue;
     float: left;
     font-size: 160%;
+}
+
+.closeModal{
+margin-left: 62%;
 }
 
 .modalBody {
     margin-left: -4%;
     padding-bottom:0%;
     font-size: 100%;
+    text-align: center;
 }
 
 .modalButtons {
@@ -42,12 +44,12 @@
     margin-bottom: 0%;
 }
 
-.modalInputList {
+.modalList {
     list-style: none;
     font-size: 120%;
 }
 
-.modalInputProperty {
+.modalProperty {
     border-radius: 5px;
     border: 1px darkgray solid;
     padding: 1%;

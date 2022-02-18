@@ -54,3 +54,7 @@ button.delete:hover {
 	background-color: rgb(255, 148, 148);
 	color: white;
 }
+
+.confirmButton{
+    margin-top: -5%;
+}
