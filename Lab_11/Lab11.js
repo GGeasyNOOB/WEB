@@ -56,4 +56,4 @@ let secondInHour = 3600;
 let secondInDay = 24*secondInHour;
 let secondInMonth = 30*secondInDay;
 
-alert("Секунд в : годині" + secondInHour+ ", Секунд в дні: " + secondInDay + ", Секунд в місяці: " + secondInMonth);
+alert("Секунд в годині = " + secondInHour+ ", Секунд в дні = " + secondInDay + ", Секунд в місяці = " + secondInMonth);
